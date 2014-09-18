@@ -9,31 +9,29 @@ Datasuckers must implement a standardized REST API:
 - ... possibly more (API is under development)
 
 Datasuckers must return JSON card objects (property types and names are under development):
-<code>
-card.code
-card.title
-card.agendapoints
-card.baselink
-card.cost
-card.faction
-card.factioncost
-card.illustrator
-card.imagesrc
-card.influencelimit
-card.memoryunits
-card.mindecksize
-card.number
-card.maxperdeck
-card.quantity
-card.set
-card.side
-card.strength
-card.subtype
-card.text
-card.trash
-card.type
-card.uniqueness
-</code>
+- card.code
+- card.title
+- card.agendapoints
+- card.baselink
+- card.cost
+- card.faction
+- card.factioncost
+- card.illustrator
+- card.imagesrc
+- card.influencelimit
+- card.memoryunits
+- card.mindecksize
+- card.number
+- card.maxperdeck
+- card.quantity
+- card.set
+- card.side
+- card.strength
+- card.subtype
+- card.text
+- card.trash
+- card.type
+- card.uniqueness
 
 The Datasucker API represents the aboslutely smallest possible API needed to power external Apps.
 Any search feature, sorting, querying, sub-queries, etc. must be built external to the Datasucker API.
@@ -45,7 +43,7 @@ The servers hosting this data will be private and not easily discoverable. The d
 
 Currently there is a Parse.com Datasucker here.
 ( improved instructions coming soon )
-<code>
+```
 To get it running, sign up for a free Developer account at Parse.com.
 Create your first App and call it "Datasucker".
 It's a "Cloud Code" App.
@@ -62,4 +60,4 @@ Next you'll want to go to your project on Parse and schedule the background job 
 ( Core -> Jobs -> Schedule a Job -> Select "refreshData")
 Set it to repeat at a reasonable rate (once a day or week should be fine).
 Click "Run Now". It will take ~6-7 minutes to populate your Datasucker.
-</code>
+```
